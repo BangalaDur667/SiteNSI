@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>name</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width">
+        <link href="../styles/style_vos demandes.css"
+        rel="stylesheet"
+        type="text/css"/>
+    </head>
+    <header>
+        <a href="index.html">
+        <img src="../styles/img/Apple_Logo.svg" alt="applelogo" height="32px" width="28px" class="apple-logo" />
+        </a>
+        <button type="button" aria-label="toggle menu" class="menu-button">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
+        <nav>
+            <a href="#">Où Acheter ?</a>
+            <a href="vos_demandes.html">Vos Demandes</a>
+            <a href="#">FAQ</a>
+            <a href="nous_contacter.html">Nous contacter</a>
+        </nav>
+</header>
+
+	<main>
+        <div class="request">
+			<h1>Votre Demande :</h1>
+            
+            <p id="nomField" class="field"><span class="qualifier">nom</span></p>
+            <p id="prenomField" class="field"><span class="qualifier">prénom</span></p>
+            <p id="mailField"class="field"><span class="qualifier">e-mail</span></p>
+            <p id="messageField" class="field"><span class="qualifier">message</span></p>
+            <div class="abc">
+                <img src="../styles/img/gender-male.svg" id="male" alt="male" class="unknown" height="200" width="200"></img>
+                <img src="../styles/img/gender-female.svg" id="female" alt="female" class="unknown"  height="200" width="200"></img>
+                </div>
+        </div>
+	</main>
+    <script type="text/javascript" src="../scripts/navbar.js"></script>
+
+    <script>
+		
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    var nomField = document.getElementById("nomField");
+    var prenomField = document.getElementById("prenomField");
+    var mailField = document.getElementById("mailField");
+    var messageField = document.getElementById("messageField");
+
+
+    const male = document.getElementById("male");
+    const female = document.getElementById("female");
+        function nomHover(){nomField.classList.toggle("hover")}
+        function prenomHover(){prenomField.classList.toggle("hover")}
+        function mailHover(){mailField.classList.toggle("hover")}
+        function messageHover(){messageField.classList.toggle("hover")}
+
+        nomField.addEventListener("mouseenter",nomHover)
+        prenomField.addEventListener("mouseenter",prenomHover)
+        mailField.addEventListener("mouseenter",mailHover)
+        messageField.addEventListener("mouseenter",messageHover)
+
+		
+    if (urlParams.has('sexe')) {
+
+        const sexe = urlParams.get('sexe');
+        console.log(sexe);
+        if (sexe == "Monsieur"){
+            male.classList.replace("unknown", "male")
+        }
+        else if (sexe === "Madame"){
+            female.classList.replace("unknown", "female")
+        }
+    }
+    if (urlParams.has('nom')) {
+        const nom = urlParams.get('nom');
+        nomField.innerHTML += nom;
+        console.log(nom)
+    }
+    if (urlParams.has('prenom')) {
+        const prenom = urlParams.get('prenom');
+        prenomField.innerHTML += prenom ;
+        console.log(prenom)
+    }
+    if (urlParams.has('adressemail')) {
+        const adressemail = urlParams.get('adressemail');
+        mailField.innerHTML += adressemail ;
+        console.log(adressemail)
+    }
+    if (urlParams.has('message')) {
+        const message = urlParams.get('adressemail');
+        messageField.innerHTML +=  message;
+        console.log(message)
+    }
+
+
+</script>
+    </html>

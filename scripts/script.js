@@ -19,6 +19,8 @@ if (window.screen.width >= 1800) {
 const slidesPos = document.querySelector(".slides");
 const leftChevron = document.getElementById("left-chevron");
 const rightChevron = document.getElementById("right-chevron");
+const left = document.querySelector(".left-arrow");
+const right = document.querySelector(".right-arrow");
 var slideNumber = 0;
 
 function checkSlide(page) {
@@ -27,24 +29,28 @@ function checkSlide(page) {
   }
   if (page == 1) {
     slidesPos.classList.toggle("pos2");
+    left.classList.toggle("usable");
   }
   if (page == 2) {
     slidesPos.classList.toggle("pos3");
+    left.classList.toggle("usable");
   }
   if (page == 3) {
     slidesPos.classList.toggle("pos4");
+    left.classList.toggle("usable");
   }
   if (page == 4) {
     slidesPos.classList.toggle("pos5");
+    left.classList.toggle("usable");
   }
   if (page == 5) {
     slidesPos.classList.toggle("pos6");
+    left.classList.toggle("usable");
   }
   if (page == 6) {
     slidesPos.classList.toggle("pos7");
-  }
-  if (page == 7) {
-    slidesPos.classList.toggle("pos8");
+    left.classList.toggle("usable");
+    right.classList.toggle("limit");
   }
 }
 

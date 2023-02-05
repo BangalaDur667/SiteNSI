@@ -105,15 +105,16 @@ nav.active{
     }
 
 .carroussel{
-    width: 1200px;
+    width: 1300px;
     overflow: hidden;
+    
 }
 .wrap-carroussel{
     background-color: #f0f0f2;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 55vh;
 }
 
 .slides{
@@ -146,7 +147,11 @@ nav.active{
     transform: translateX(-115%);
 }
 
-.swipe-arrow{
+.left-arrow{
+    opacity: 0;
+}
+.left-arrow.usable{
+    margin: 10px;
     border-radius: 1000px;
     height: 60px;
     width: 60px;
@@ -154,28 +159,39 @@ nav.active{
     opacity: 0.8;
     background-color: white;
 }
+.right-arrow{
+    margin: 10px;
+    border-radius: 1000px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    opacity: 0.8;
+    background-color: white;
+
+}
+.right-arrow.limit{
+    opacity: 0;
+}
 
 .info-card{
     border-radius: 30px;
-    border: 1px 1px #000;
     background-color: #fff;
     margin: 20px;
     font-size: 25px;
-    width: 400px;
     height: 350px;
 }
 .card-text{
-    width:270px;
-    margin: 5px;
-
-
+    width:250px;
 }
 .card-logo{
-    position: absolute;
-    top: 20px;
+    margin: 20px;
 }
+
 .colored-text{
     background: linear-gradient(to right,cornflowerblue,blueviolet,violet,pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.alltext{
+    margin: 30px;
 }

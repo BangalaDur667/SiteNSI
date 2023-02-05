@@ -1,5 +1,5 @@
 header{
-    height: 50px;
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ header{
     background: transparent;
     border: none;
 }
-nav{padding-top: 100px;
+nav{padding-top: 50px;
     position: fixed;
     width: 100%;
     min-height: 50vh;
@@ -68,7 +68,12 @@ nav.active{
 }
 
 .full-page-div{
-    width: 1920px;
+
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
 
 }
 .small-title{
@@ -91,4 +96,7 @@ nav.active{
         justify-content: center;
         font-size: 100px;
     }
-
+.apple-logo{
+    z-index: 10;
+    padding-top: 10px;
+}

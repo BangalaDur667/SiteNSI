@@ -1,24 +1,43 @@
 header{
-    position: absolute;
-}
-
-.header-banner{
+    height: 50px;
     width: 100%;
-    box-shadow: 0px 1px;
     display: flex;
-    align-items: center; 
+    justify-content: center;
     position: fixed;
 }
 .menu-button{
     z-index: 10000;
-    top: 3;
-    right: 0;
-    position: absolute;
+    top: 3%;
+    left: 1%;
+    position: fixed;
     cursor: pointer;
     width: 60px;
     height: 35px;
     background: transparent;
     border: none;
+}
+nav{padding-top: 100px;
+    position: fixed;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f1f1f1;
+    border-bottom: 1px solid #cfcfcf;
+    transform: translateY(-200%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+nav a {
+    font-size: 30px;
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:#000
+}
+nav.active{
+    transform: translateY(0%);
 }
 .line{
     position: absolute;
@@ -47,34 +66,29 @@ header{
 .menu-button.active .l3{
     transform: translateY(0px) rotate(-135deg);
 }
-nav{padding-top: 100px;
-    position: fixed;
-    width: 100%;
-    min-height: 50vh;
+
+.full-page-div{
+    width: 1920px;
+
+}
+.small-title{
+    background: linear-gradient(to right,cornflowerblue,blueviolet,violet,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family:fantasy;
+    margin: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #f1f1f1;
-    border-bottom: 1px solid #cfcfcf;
-    transform: translateY(-200%);
-    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    font-size: 75px;
 }
-nav a {
-    font-size: 30px;
-    margin: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    color:#000
-}
-nav.active{
-    transform: translateY(25%);
-}
-h1{
-    
-position: relative;
-right: -45%;
-}
-.cart-logo{
-    position: absolute;
-}
+.big-title{
+        color: #000;
+        text-align: center;
+        font-family:fantasy;
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        font-size: 100px;
+    }
+

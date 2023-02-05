@@ -5,6 +5,10 @@ header{
     justify-content: center;
     position: fixed;
 }
+.apple-logo{
+    z-index: 10;
+    padding-top: 10px;
+}
 .menu-button{
     z-index: 10000;
     top: 3%;
@@ -67,14 +71,17 @@ nav.active{
     transform: translateY(0px) rotate(-135deg);
 }
 
-.full-page-div{
-
+.full-page-div-smallscreen{
     align-items: center;
-    justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 1400px;
-
+}
+.full-page-div-bigscreen{
+    width: 1920px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .small-title{
     background: linear-gradient(to right,cornflowerblue,blueviolet,violet,pink);
@@ -96,7 +103,79 @@ nav.active{
         justify-content: center;
         font-size: 100px;
     }
-.apple-logo{
-    z-index: 10;
-    padding-top: 10px;
+
+.carroussel{
+    width: 1200px;
+    overflow: hidden;
+}
+.wrap-carroussel{
+    background-color: #f0f0f2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides{
+    display: flex;
+    flex-direction: row;
+}
+
+.slides.pos1{
+    transform: translateX(0%);
+}
+.slides.pos2{
+    transform: translateX(-14.375%);
+}
+.slides.pos3{
+    transform: translateX(-28.75%);
+}
+.slides.pos4{
+    transform: translateX(-43.125%);
+}
+.slides.pos5{
+    transform: translateX(-57.5%);
+}
+.slides.pos6{
+    transform: translateX(-71.875%);
+}
+.slides.pos7{
+    transform: translateX(-86.25%);
+}
+.slides.pos8{
+    transform: translateX(-115%);
+}
+
+.swipe-arrow{
+    border-radius: 1000px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    opacity: 0.8;
+    background-color: white;
+}
+
+.info-card{
+    border-radius: 30px;
+    border: 1px 1px #000;
+    background-color: #fff;
+    margin: 20px;
+    font-size: 25px;
+    width: 400px;
+    height: 350px;
+}
+.card-text{
+    width:270px;
+    margin: 5px;
+
+
+}
+.card-logo{
+    position: absolute;
+    top: 20px;
+}
+.colored-text{
+    background: linear-gradient(to right,cornflowerblue,blueviolet,violet,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

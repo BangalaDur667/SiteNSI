@@ -120,6 +120,7 @@ nav.active{
 .slides{
     display: flex;
     flex-direction: row;
+    transition: 0.3s;
 }
 
 .slides.pos1{
@@ -135,13 +136,13 @@ nav.active{
     transform: translateX(-43.125%);
 }
 .slides.pos5{
-    transform: translateX(-57.5%);
+    transform: translateX(-57.5%);  
 }
 .slides.pos6{
-    transform: translateX(-71.875%);
+    transform: translateX(-71.875%); 
 }
 .slides.pos7{
-    transform: translateX(-86.25%);
+    transform: translateX(-86.25%); 
 }
 .slides.pos8{
     transform: translateX(-115%);
@@ -149,6 +150,7 @@ nav.active{
 
 .left-arrow{
     opacity: 0;
+    transition: 0.4s;
 }
 .left-arrow.usable{
     margin: 10px;
@@ -167,6 +169,7 @@ nav.active{
     border: none;
     opacity: 0.8;
     background-color: white;
+    transition: 0.4s;
 
 }
 .right-arrow.limit{

@@ -134,25 +134,22 @@ nav.active{
     transform: translateX(0%);
 }
 .slides.pos2{
-    transform: translateX(-14.375%);
+    transform: translateX(-22.5%);
 }
 .slides.pos3{
-    transform: translateX(-28.75%);
+    transform: translateX(-45%);
 }
 .slides.pos4{
-    transform: translateX(-43.125%);
+    transform: translateX(-67.5%);
 }
 .slides.pos5{
-    transform: translateX(-57.5%);  
+    transform: translateX(-90%);  
 }
 .slides.pos6{
-    transform: translateX(-71.875%); 
+    transform: translateX(-112.5%); 
 }
 .slides.pos7{
-    transform: translateX(-86.25%); 
-}
-.slides.pos8{
-    transform: translateX(-115%);
+    transform: translateX(-135%); 
 }
 
 .left-arrow{

@@ -78,3 +78,4 @@ function rightPress() {
 }
 leftChevron.addEventListener("click", leftPress);
 rightChevron.addEventListener("click", rightPress);
+
